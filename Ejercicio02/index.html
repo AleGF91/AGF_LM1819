@@ -6,18 +6,25 @@
     <title>Ejercicio02</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body style="background-image: url('unnamed.png')">
+<!-- <body style="background-image: url('unnamed.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover"> -->
+<!-- <body style="background: url('unnamed.png') no-repeat center center fixed"> -->
+<body>
     <!-- Enlaces -->
     <a href="http://www.google.es" target="_blank" hreflang="es" rel="next" type="text/html">Google</a>
     <a href="nueva.html">Ir a Nueva</a>
     <a href="carpeta/datos.html">Ir a Datos</a>
     <a href="nueva.html#final" target="_blank">Ir al final de nueva</a>
 
-    <!-- Imágenes --><!-- <img> es el elemento para insertar imágenes. Atributos src (source=la ruta de acceso a la imagen) y alt (el texto alternativo a mostrar si no se pudiera la imagen -->
-    <img src="unnamed.png" alt="Google Developer" width="150" height="150"> <!-- En HTML5 no se pueden usar, mejor hoja de estilo style-->
-    <img src="unnamed.png" alt="Google Developer" style="width: 250px; height: 250px">
+    <!-- Imágenes -->
+    <img src="unnamed.png" alt="Google Developer" usemap="#formas" ismap="ismap">
+    <map name="formas" id="formas">
+        <area shape="rect" coords="1,1,150,150" href="http://www.google.es" target="_blank" />
+        <area shape="circle" coords="225,75,75" href="http://www.wikipedia.org" target="_blank" />
+        <area shape="poly" coords="45,155,15,175,10,185,5,200,0,225,5,250,15,270,30,285,50,295,75,300,100,295,125,280,135,270,145,250,150,225,145,200,135,180,125,170,120,165,105,155,90,150,75,150,50,155,35,160,25,170;" href="http://www.amazon.es" target="_blank"/>
+    </map>
 </body>
 </html>
-
-
-<!-- Continuar en 7:53 https://www.youtube.com/watch?v=RWqIgomxKxM -->
